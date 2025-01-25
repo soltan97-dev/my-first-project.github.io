@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Azerbaijan</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="index.html" class="highlighted-title">Discover Azerbaijan</a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="tourism.html">Tourism</a></li>
+        <li><a href="cuisine.html">Cuisine</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Welcome to Azerbaijan</h1>
+    </header>
+    <div class="buttons">
+      <button id="scrollTopButton" style="display: none">Up</button>
+    </div>
+    <section id="places" class="section">
+      <h2>Places to Visit</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide active">
+            <img src="img/1.jpg" alt="Baku" />
+            <h3>Baku</h3>
+            <p>The heart of Azerbaijan, blending history and modernity.</p>
+          </div>
+          <div class="slide">
+            <img src="img/2.jpg" alt="Gence" />
+            <h3>Gence</h3>
+            <p>Explore ancient rock carvings and mud volcanoes.</p>
+          </div>
+          <div class="slide">
+            <img src="img/3.jpg" alt="Sheki" />
+            <h3>Sheki</h3>
+            <p>A historic city known for its Khan's Palace.</p>
+          </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </section>
+
+    <section id="map" class="section">
+      <h2>Map of Azerbaijan</h2>
+      <div id="mapContainer" style="width: 100%; height: 400px"></div>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
